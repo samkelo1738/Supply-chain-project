@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Supply Chain Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Supply Chain Management</h1>
+
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <img src="images.2/Protein-in-Dairy.jpg" alt="Dairy Delivery" />
+      <div class="caption">Dairy Delivery</div>
+    </div>
+    <div class="slide fade">
+      <img src="images.2/OIP.webp" alt="Fresh Veggies" />
+      <div class="caption">Fresh Veggies</div>
+    </div>
+    <div class="slide fade">
+      <img src="images.2/wallpapersden.com_fish-meat-butter_2560x1600.jpg" alt="Seafood Safety" />
+      <div class="caption">Seafood Safety</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  </div>
+
+  <div class="dots-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <div class="container">
+    <p>Select the product you're delivering and enter your details:</p>
+
+    <label for="products">Products:</label>
+    <select id="products">
+      <option value="dairy">Dairy</option>
+      <option value="veggies">Veggies</option>
+      <option value="meat">Meat</option>
+      <option value="seafood">Seafood</option>
+      <option value="fruits">Fruits</option>
+    </select><br><br>
+
+    <label>Driver ID:</label>
+    <input type="text" id="driver-id" placeholder="e.g. D1234567"><br>
+
+    <label>Driver Name:</label>
+    <input type="text" id="driver-name" placeholder="Enter Driver Name"><br>
+
+    <label>Password:</label>
+    <input type="password" id="driver-password" placeholder="Enter Password"><br><br>
+
+    <div class="Activity">
+      <input type="button" onclick="checkTemperatureStatus()" value="Check Temperature">
+      <input type="button" onclick="Login()" value="Login">
+      <input type="button" onclick="signOut()" value="Sign Out">
+      <input type="button" onclick="forgotPassword()" value="Forgot Password" class="forgot-btn">
+    </div>
+
+    <div class="return-link">
+      <a href="index.html">← Return to Login</a>
+    </div>
+  </div>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

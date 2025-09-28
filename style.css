@@ -1,0 +1,187 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('images.2/pngtree-many-different-kinds-of-food-are-arranged-on-a-table-picture-image_3145533.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 20px;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  padding: 8px;
+  margin-bottom: 12px;
+  width: calc(100% - 130px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.Activity input {
+  margin: 8px 5px;
+  padding: 10px 16px;
+  background-color: #0078D7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.Activity input:hover {
+  background-color: #005fa3;
+}
+
+.forgot-btn {
+  background-color: #f44336;
+}
+
+.forgot-btn:hover {
+  background-color: #d32f2f;
+}
+
+.return-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.return-link a {
+  color: #0078D7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.return-link a:hover {
+  text-decoration: underline;
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.slide {
+  display: none;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.caption {
+  color: #fff;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 5px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  user-select: none;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.dots-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 5px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  select {
+    width: 100%;
+  }
+
+  label {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .Activity input {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
